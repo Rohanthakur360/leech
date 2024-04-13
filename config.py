@@ -8,20 +8,20 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "6826605668:AAER_9fJYl5lfSDQCkR5gjT9LYWp
 
 PASS_DB = int(os.environ.get("PASS_DB", "721"))
 
-OWNER = int(os.environ.get("OWNER", 7064711434)
+OWNER = int(os.environ.get("OWNER", 1871785273)
 
-LOG = -1002122751557
+LOG = -1002132785565
 
 try:
   GROUPS =[]
-  for x in (os.environ.get('GROUPS', '-1002025716464 -1002116445692').split()):
+  for x in (os.environ.get('GROUPS' , '-1002025716464, -1002116445692').split()):
     GROUPS.append(int(x))
 except ValueError:
     raise Exception("Your AUTH GROUPS list does not contain valid integers.")    
 
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "7064711434 ").split()):
+    for x in (os.environ.get("ADMINS", "1871785273").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
