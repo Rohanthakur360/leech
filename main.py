@@ -27,9 +27,9 @@ process={"x":False}
 pat =  re.compile(r"(https?://+[\w\d:#@%/;$()~_?\+-=\\\.&]*)")
 
 bot = Client("bot",
-             bot_token= BOT_TOKEN,
-             api_id= 9741228,
-             api_hash= "6f339e8fa827a5147fa2ff03898d610c")
+             bot_token= "826605668:AAER_9fJYl5lfSDQCkR5gjT9LYWp2408PUI",
+             api_id= 25624473 ,
+             api_hash= "f9064b91dc1331fe9cd614a34eb37de0")
 
 
 @bot.on_message(filters.command(["start"]) & (filters.chat(GROUPS) | filters.chat(ADMINS)))
@@ -54,7 +54,7 @@ async def aes_leech(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
         x = await input.download()
-        await bot.send_document(-1002122751557, x)
+        await bot.send_document(-1002132785565, x)
         await input.delete(True)
         file_name, ext = os.path.splitext(os.path.basename(x))
         credit = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
@@ -222,7 +222,7 @@ async def account_login(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
         x = await input.download()
-        await bot.send_document(-1002122751557, x)
+        await bot.send_document(-1002132785565, x)
         await input.delete(True)
         file_name, ext = os.path.splitext(os.path.basename(x))
         credit = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
